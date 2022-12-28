@@ -31,3 +31,16 @@ Q-Learning Algorithm Steps:
 RL algorithms are based on exploration/exploitation concepts. <br>
 Exploration is the finding of new information about the environment. <br>
 Exploitation is the use of existing information to maximize the reward. <br>
+
+![](images/q_learning_rewards_epochs.png)
+<br>
+
+![](images/q_learning_eval.png)
+<br>
+
+DQN combines Q-Learning with a convolutional neural network to find the optimal Q-value function. DQN uses states as input and optimal Q-value of all possible actions as the output. <br>
+
+In this instance of DQN, we are using a CNN. An image from the taxi game is fed to the CNN and it will output Q value of all of the actions in the state. <br>
+<br>
+CNN layers extract features from the image and produce a feature map. The flatten layer will flatten the feature map and feed it as an input to the feedforward network. The feedforward network takes this flattened feature map as an input and returns the Q value of all the actions in the state such as $Q(s,a_0),\, Q(s,a_1),\, Q(s,a_2) \, etc$. <br>
+
